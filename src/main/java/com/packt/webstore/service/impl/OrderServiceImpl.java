@@ -4,8 +4,10 @@ import org.springframework.stereotype.Service;
 import com.packt.webstore.domain.Product;
 import com.packt.webstore.domain.repository.ProductRepository;
 import com.packt.webstore.service.OrderService;
+
 @Service
 public class OrderServiceImpl implements OrderService{
+
     @Autowired
     private ProductRepository productRepository;
     public void processOrder(String productId, int count) {
